@@ -1,21 +1,5 @@
-# React-Luo
+# React-HOOKs
 
-[![Build Status](https://travis-ci.org/javaLuo/react-luo.svg?branch=master)](https://travis-ci.org/javaLuo/react-luo)
-[![codebeat badge](https://codebeat.co/badges/eb91ca34-7c1b-424f-be1c-a5d79fd3d269)](https://codebeat.co/projects/github-com-javaluo-react-luo-master)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
-## what is this?
-
-react automaticaly<br/>
-这是一个 React 脚手架，没有使用 create-react-app<br/>
-标准的 React+Redux 分层结构<br/>
-经过了多个项目的实践，不停的更新和优化出来的。目前自己做项目也在用。
-
-- PWA、Hooks、代码分割、热替换、dllPlugin 静态资源预编译、HappyPack 多线程构建、ES6+语法
-
-## 注意的地方
-
-- antd icon 打包体积过大：<a href="https://github.com/ant-design/ant-design/issues/12011" target="_blank">https://github.com/ant-design/ant-design/issues/12011</a>，开了 gzip 之后还行
 
 ## 构建 Start
 
