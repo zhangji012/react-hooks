@@ -4,7 +4,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import tools from "@/util/tools";
-console.log(222222, tools);
+
 
 /** 所需的各种资源 **/
 import "./index.less";
