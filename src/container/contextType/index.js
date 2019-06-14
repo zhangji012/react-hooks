@@ -1,8 +1,7 @@
 import React, { createContext, Component } from "react"
-import { connect } from "react-redux"
 import "./index.less"
 
-// 比Context用起来更加简洁
+// 比Context用起来更加简洁,但是有多个 context，contextType只能指向其中的一个
 const BatteryContext = createContext() 
 
 
@@ -50,11 +49,4 @@ class ContextTypePage extends Component {
 
 }
 
-export default connect(
-  state => {
-    return {}
-  },
-  dispatch => ({
-    actions: {}
-  })
-)(ContextTypePage)
+export default ContextTypePage

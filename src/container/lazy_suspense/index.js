@@ -11,6 +11,7 @@ class ContextPage extends Component {
       hasError: false
     }
   }
+  // static介绍  https://www.jianshu.com/p/5585412b4575
   static getDerivedStateFromError() {
     return {
       hasError: true,

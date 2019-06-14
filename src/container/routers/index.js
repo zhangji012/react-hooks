@@ -60,7 +60,7 @@ function RootRouterContainer(props) {
           render={() => {
             return (
               <Switch>
-                <Redirect exact from="/" to="/context" />
+                <Redirect exact from="/" to="/hooks" />
                 <Route
                   path="/home"
                   render={props => onEnter(Home, props)}

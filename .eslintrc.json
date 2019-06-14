@@ -17,6 +17,6 @@
   },
   "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
-
+    "react-hooks/rules-of-hooks": "error"
   }
 }
