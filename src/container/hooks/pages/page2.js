@@ -14,7 +14,6 @@ function HooksPage2(props) {
   return (
     <div>
       <button type='button' onClick={() => {
-        
         setCount(count + 1)
       }}>count:{count}, name:{myName}</button>
     </div>

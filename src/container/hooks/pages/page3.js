@@ -21,7 +21,6 @@ function HooksPage3(props) {
   })
   // 这个只调用了一次
   // 第二个参数是一个数组，只有数组的每一项都不变时才会阻止useEffect执行
-  // todo 是什么样的不变呢，是不是和PureComponent一样对里面的内容作浅比较
   // 第二个参数3种形态undefined、空数组、非空数组
   useEffect(() => {
     console.log(2222)
@@ -31,7 +30,7 @@ function HooksPage3(props) {
       console.log('组件卸载时会执行');
       window.removeEventListener('resize', onResize, false)
     }
-  }, []) // 这个[]作用不太清楚，有这个可以避免每次渲染都绑定和解绑，只运行在第一次渲染，而且结束时会解除这个绑定函数
+  }, []) // 有这个可以避免每次渲染都绑定和解绑，只运行在第一次渲染，而且结束时会解除这个绑定函数，相当于在comemntDidMount中执行
 
   // 这个只有当count变化时才执行
   useEffect(() => {

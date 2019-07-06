@@ -2,6 +2,10 @@ import React, { Component, lazy, Suspense } from "react"
 import { connect } from "react-redux"
 import "./index.less"
 
+// 封装的是组件的导入行为
+// 详细介绍  https://zh-hans.reactjs.org/docs/code-splitting.html#reactlazy
+// 注意暂不支持服务端渲染
+// /* webpackChunkName: "about" */  结合webpack可以自定义命名
 const About = lazy(() => import(/* webpackChunkName: "about" */ './about.js'))
 
 class ContextPage extends Component {
@@ -12,7 +16,9 @@ class ContextPage extends Component {
     }
   }
   // static介绍  https://www.jianshu.com/p/5585412b4575
+  // 错误边界
   static getDerivedStateFromError() {
+    // todo 加入放生了错误，如何再请求一次
     return {
       hasError: true,
     }
@@ -37,7 +43,6 @@ class ContextPage extends Component {
             </Suspense>
           )
         }
-
       </div>
     )
   }
