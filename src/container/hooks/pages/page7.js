@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo, memo, useCallback, useRef, PureCom
 // class里使用 createRef
 // hooks里使用 useRef:2个使用场景
 // 1.获取子组件或者DOM节点的句柄
-// 2.渲染周期之间共享数据的存储
+// 2.渲染周期之间共享数据的存储（不会触发重渲染）
 
 // todo 问题，在副作用中如何判断一个元素或者组件在本次或者上次渲染之间有过重新创建
 

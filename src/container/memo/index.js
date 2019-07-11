@@ -65,11 +65,11 @@ class ContextPage extends Component {
     // console.log('count', this.state.count);
     console.log('age', this.state.person.age);
     // 还有在Leaf 放入一个 cb = {() => {}}内联函数，也会每次都渲染， 可以使用this.cb
- 
+    // count={this.state.count}
     return (
       <div>
         
-        <Leaf name="zhang"  person={person}  />
+        <Leaf name="zhang"  person={person}   />
         <button type='button' onClick={() => {
           // 每次运行后Leaf 组件都会重新渲染一次
           setInterval(() => {

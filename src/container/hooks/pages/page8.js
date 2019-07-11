@@ -7,6 +7,7 @@ const Counter = memo(function Counter(props) {
   )
 })
 // 自定义 Hook 是一个函数，其名称以 “use” 开头
+// 更多学习访问 https://react.docschina.org/docs/hooks-intro.html
 function useCount(defaultCount) {
   const [count, setCount] = useState(defaultCount)
   const it = useRef() // 访问上一次渲染所需要的数据，可以放到ref中,

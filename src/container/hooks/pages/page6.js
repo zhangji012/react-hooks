@@ -11,8 +11,10 @@ const Counter = memo(function Counter(props) {
 function HooksPage5(props) {
 
   const [count, setCount] = useState(0)
-
+  // count === 3  这个现在是个boolen值，只要发生变化就会重新计算
+  // useMemo是在渲染期间完成的，是需要返回值的
   const double = useMemo(() => {
+    console.log('count', count)
     return count * 2
   }, [count === 3])
 
@@ -31,7 +33,7 @@ function HooksPage5(props) {
   const onClick = useCallback(() => {
     console.log('click')
   }, [])
-
+  // 注意useMemo、useMemo只是对性能优化的锦上添花，不能作为逻辑判断的依据
   return (
     <div>
       <button type='button' onClick={() => {
