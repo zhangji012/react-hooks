@@ -2,6 +2,7 @@ import React, { createContext, Component } from "react"
 import { connect } from "react-redux"
 // import Leaf from "./leaf"
 // import {BatteryContext, OnlineContext} from './context'
+// 老的context对性能的影响特别大
 import "./index.less"
 // 一般不要滥用，会影响组件的独立性
 // Provider：提供者          Consumer：消费者

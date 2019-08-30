@@ -29,7 +29,7 @@ function HooksPage5(props) {
         setCount(count + 1)
       }}>count:{count}, doule:{double}</button>
       <Counter count={count} />
-    </div>
+    </div>      
   )
 }
 export default HooksPage5

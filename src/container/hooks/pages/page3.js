@@ -15,6 +15,7 @@ function HooksPage3(props) {
     })
   }
   // 这一个每次渲染结束都在调用
+  // document.title = count
   useEffect(() => {
     console.log(1111111)
     document.title = count
@@ -33,6 +34,7 @@ function HooksPage3(props) {
   }, []) // 有这个可以避免每次渲染都绑定和解绑，只运行在第一次渲染，而且结束时会解除这个绑定函数，相当于在comemntDidMount中执行
 
   // 这个只有当count变化时才执行
+
   useEffect(() => {
     console.log('count', count)
   }, [count])
@@ -59,8 +61,6 @@ function HooksPage3(props) {
             {size.width}*{size.height}
           </p>
       }
-
-
     </div>
   )
 }

@@ -35,3 +35,9 @@ Hooks 的出现本质是把这种面向生命周期编程变成了面向业务�
 
 ##Hooks常见问题
 1. [常见问题](https://react.docschina.org/docs/hooks-faq.html#should-i-use-hooks-classes-or-a-mix-of-both)
+
+
+### 问题
+1. 如何继承
+   
+   函数式编程，代码更简洁，细粒度好

@@ -22,6 +22,8 @@ function HooksPage5(props) {
   // const onClick = () => {
   //   console.log('click')
   // }
+
+
   // 这个时候使用useMemo后，锁定onClick，只渲染一次，防止过渡渲染
   // const onClick = useMemo(() => {
   //   return () => {
@@ -33,7 +35,7 @@ function HooksPage5(props) {
   const onClick = useCallback(() => {
     console.log('click')
   }, [])
-  // 注意useMemo、useMemo只是对性能优化的锦上添花，不能作为逻辑判断的依据
+  // 注意useMemo、Memo只是对性能优化的锦上添花，不能作为逻辑判断的依据
   return (
     <div>
       <button type='button' onClick={() => {

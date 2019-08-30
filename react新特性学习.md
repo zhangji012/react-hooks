@@ -3,4 +3,4 @@
 2. ContextType: Context简洁的写法，但是多个context，contextType只能指向其中的一个
 3. lazy：实现延迟加载,结合Suspense使用
 4. Suspense
-5. memo：提升性能，和PureComponent类似  
+5. hooks  

@@ -8,26 +8,29 @@ import React, { useEffect, useState, useMemo, memo, useCallback, useRef, PureCom
 // todo 问题，在副作用中如何判断一个元素或者组件在本次或者上次渲染之间有过重新创建
 
 
-// const Counter = memo(function Counter(props) {
-//   console.log('Counter render')
-//   return (
-//     <h1 onClick={props.onClick}>Counter:{props.count}</h1>
-//   )
-// })
-
-class Counter extends PureComponent {
-  speak = () => {
+const Counter = memo(function Counter(props) {
+  console.log('Counter render')
+  const speak = () => {
     console.log(`now count ${this.props.count}`)
-  }
-  render() {
-    const props = this.props
-    return (
-      <h1 onClick={props.onClick}>Counter:{props.count}</h1>
-    )
-  }
-}
+  } 
+  return (
+    <h1 onClick={props.onClick}>Counter:{props.count}</h1>
+  )
+})
 
-function HooksPage5(props) {
+// class Counter extends PureComponent {
+//   speak = () => {
+//     console.log(`now count ${this.props.count}`)
+//   }
+//   render() {
+//     const props = this.props
+//     return (
+//       <h1 onClick={props.onClick}>Counter:{props.count}</h1>
+//     )
+//   }
+// }
+
+function HooksPage7(props) {
 
   const [count, setCount] = useState(0)
   const counterRef = useRef()
@@ -60,4 +63,4 @@ function HooksPage5(props) {
     </div>
   )
 }
-export default HooksPage5
+export default HooksPage7
