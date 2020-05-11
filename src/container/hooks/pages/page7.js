@@ -34,6 +34,10 @@ function HooksPage7(props) {
 
   const [count, setCount] = useState(0)
   const counterRef = useRef()
+  // const HeightrRef = useRef<HTMLDivElement>(null)  // null初始值要给，严格模式,在ts上使用useRef
+  // useEffect(() => {
+  //   console.log(HeightrRef.current && HeightrRef.current.clientHeight);
+  // },[])
   // let it  // 这样定义后clearInterval(it)没有生效
   const it = useRef() // 访问上一次渲染所需要的数据，可以放到ref中,
   const onClick = useCallback(() => {
@@ -54,6 +58,7 @@ function HooksPage7(props) {
       clearInterval(it.current)
     }
   })
+
   return (
     <div>
       <button type='button' onClick={() => {
