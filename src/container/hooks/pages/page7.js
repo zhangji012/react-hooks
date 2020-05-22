@@ -36,7 +36,8 @@ function HooksPage7(props) {
   const counterRef = useRef()
   // const HeightrRef = useRef<HTMLDivElement>(null)  // null初始值要给，严格模式,在ts上使用useRef
   // useEffect(() => {
-  //   console.log(HeightrRef.current && HeightrRef.current.clientHeight);
+    // console.log(counterRef.current && counterRef.current.clientHeight);
+    // console.log(counterRef.current && counterRef.current.clientWidth);
   // },[])
   // let it  // 这样定义后clearInterval(it)没有生效
   const it = useRef() // 访问上一次渲染所需要的数据，可以放到ref中,
